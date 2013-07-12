@@ -1,0 +1,20 @@
+Fri, 12 Jul 2013 01:46:31 -0400
+README.rdoc	Fri, 05 Jul 2013 23:22:22 -0400
+app/controllers/achievements_controller.rb	Fri, 12 Jul 2013 01:34:48 -0400
+app/controllers/application_controller.rb	Sun, 07 Jul 2013 10:18:35 -0400
+app/controllers/badges_controller.rb	Thu, 11 Jul 2013 00:49:15 -0400
+app/controllers/home_controller.rb	Sat, 06 Jul 2013 00:20:21 -0400
+app/controllers/user_achievements_controller.rb	Thu, 11 Jul 2013 00:03:34 -0400
+app/controllers/user_badges_controller.rb	Thu, 11 Jul 2013 00:35:41 -0400
+app/helpers/achievements_helper.rb	Wed, 10 Jul 2013 02:05:42 -0400
+app/helpers/application_helper.rb	Fri, 05 Jul 2013 23:22:22 -0400
+app/helpers/badges_helper.rb	Thu, 11 Jul 2013 00:48:52 -0400
+app/helpers/home_helper.rb	Sat, 06 Jul 2013 00:20:21 -0400
+app/helpers/user_achievements_helper.rb	Wed, 10 Jul 2013 23:54:22 -0400
+app/models/achievement.rb	Wed, 10 Jul 2013 03:12:07 -0400
+app/models/badge.rb	Thu, 11 Jul 2013 00:44:37 -0400
+app/models/profile.rb	Tue, 09 Jul 2013 01:13:01 -0400
+app/models/user.rb	Wed, 10 Jul 2013 01:34:59 -0400
+app/models/user_achievement.rb	Wed, 10 Jul 2013 22:09:31 -0400
+app/models/user_achievement_info.rb	Wed, 10 Jul 2013 22:07:14 -0400
+app/models/user_badge.rb	Tue, 09 Jul 2013 00:07:38 -0400
