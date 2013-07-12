@@ -1,0 +1,16 @@
+<div>
+	<dl class="dl-horizontal">
+	  <dt>Achievement ID</dt>
+	  <dd><%= @achievement.id %></dd>
+		<dt>Title</dt>
+		<dd><%= @achievement.title %></dd>
+		<dt>Description</dt>
+		<dd><%= @achievement.description %></dd>
+		<dt>Category</dt>
+		<dd><%= @achievement.category %></dd>
+		<dt>Difficulty</dt>
+		<dd><%= @achievement.difficulty %></dd>
+	</dl>
+</div>
+
+<%= link_to "Back to Achievements", achievements_path %>

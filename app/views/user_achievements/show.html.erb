@@ -1,0 +1,21 @@
+<div>
+	<dl class="dl-horizontal">
+	  <dt>Achievement ID</dt>
+	  <dd><%= @user_achievement.achievement_id %></dd>
+		<dt>Created</dt>
+		<dd><%= @user_achievement.created_at %></dd>
+		<dt>Completed?</dt>
+		<dd><%= @user_achievement.complete %></dd>
+		<dt>Title</dt>
+		<dd><%= @user_achievement.achievement.title %></dd>
+		<dt>Description</dt>
+		<dd><%= @user_achievement.achievement.description %></dd>
+		<dt>Category</dt>
+		<dd><%= @user_achievement.achievement.category %></dd>
+		<dt>Difficulty</dt>
+		<dd><%= @user_achievement.achievement.difficulty %></dd>
+	</dl>
+	<%= link_to "Complete", complete_user_achievement_path(@user_achievement), method: :post%>
+</div>
+
+<%= link_to "Back to Achievements", achievements_path %>

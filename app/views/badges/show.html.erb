@@ -1,0 +1,18 @@
+<div>
+	<dl class="dl-horizontal">
+	  <dt>Badge ID</dt>
+	  <dd><%= @badge.id %></dd>
+		<dt>Title</dt>
+		<dd><%= @badge.title %></dd>
+		<dt>Description</dt>
+		<dd><%= @badge.description %></dd>
+		<dt>Classification</dt>
+		<dd><%= @badge.classification %></dd>
+		<dt>Number of Achievements Needed</dt>
+		<dd><%= @badge.number_of_achievements_needed %></dd>
+		<dt>Achievements</dt>
+		<dd><% @badge.achievements.each{|a| %> <%= link_to a.title, achievement_path(a) %> </br><% } %>
+	</dl>
+</div>
+
+<%= link_to "Back to Badges", badges_path %>

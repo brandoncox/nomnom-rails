@@ -1,0 +1,23 @@
+<% @grouped_badges.each do |classification, badges| %>
+<div  class="table">	
+	<% if badges.count > 0 %>
+	<h3><%= classification %></h3>
+		<table>
+			<thead>
+				<th>Title</th>
+				<th>Description</th>
+				<th>Number of Achievements Needed</th>
+			</thead>
+			<tbody>
+				<% badges.each do |badge| %>
+				<tr>
+					<td><%= link_to badge.title, badge_path(badge) %></td>
+					<td><%= badge.description %></td>
+					<td><%= badge.number_of_achievements_needed %></td>
+				</tr> 
+				<% end %>
+			</tbody>
+		</table>
+	<% end %>
+</div>
+<% end%>

@@ -1,0 +1,29 @@
+<% @achievement_groups.each do |group, achievements| %>
+<div  class="table">	
+	<% if achievements.count > 0 %>
+	<h3><%= group %></h3>
+		<table>
+			<thead>
+				<th>title</th>
+				<th>description</th>
+				<th>weight</th>
+				<th>category</th>
+				<th>difficulty</th>
+				<th>&nbsp;</th>
+			</thead>
+			<tbody>
+				<% achievements.each do |achievement| %>
+				<tr>
+					<td><%= achievement.title %></td>
+					<td><%= achievement.description %></td>
+					<td><%= achievement.weight %></td>
+					<td><%= achievement.category %></td>
+					<td><%= achievement.difficulty %></td>
+					<td><%= link_to "start", start_achievement_path(achievement) %></td>
+				</tr> 
+				<% end %>
+			</tbody>
+		</table>
+	<% end %>
+</div>
+<% end%>
