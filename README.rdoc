@@ -1,5 +1,6 @@
-== NomNomRails is the core rails web platform for reaching goals by completing short term achievements.
+== NomhomRails
 
+NomhomRails is the core rails web platform for reaching goals by completing short term achievements.
 
 * The current Ruby version this app is built on is 2.0.0p195. It is highly suggested to use RVM for managing different versions of Ruby. the rails application requires Rails 4.0.0 and Bundler to be installed.
 
