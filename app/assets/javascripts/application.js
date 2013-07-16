@@ -13,7 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+
 //= require angular
 //= require angular-bootstrap
 //= require angular-resource
+//= require nomnom
+//= require_tree ./nomnom-app
 //= require_tree .

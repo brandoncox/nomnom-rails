@@ -1,8 +1,11 @@
 class AchievementsController < ApplicationController
     
+#  def index
+#    @achievement_groups = AchievementsHelper.organized_achievements(current_user)
+#    render 'list'
+#  end
   def index
-    @achievement_groups = AchievementsHelper.organized_achievements(current_user)
-    render 'list'
+    render "index"
   end
   
   def start
@@ -17,6 +20,10 @@ class AchievementsController < ApplicationController
     end
     redirect_to achievement_url
     
+  end
+  
+  def list
+    render json: Achievement.all
   end
   
   def show

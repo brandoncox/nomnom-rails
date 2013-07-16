@@ -1,0 +1,16 @@
+<div ng-controller="AchievementsCtrl">
+  <div id="screencast-list-container" >
+	    <ul>
+	      <li ng-repeat="achievement in achievements"
+	          ng-click="showScreencast(screencast, $index)">
+	        <h3 ng-class="{active: $index == selectedRow}">{{screencast.title}}
+	          <small>({{achievement.title}})</small></h3>
+	      </li>
+	    </ul>
+	  </div>
+
+  	<div id="screencast-view-container" ng-show="selectedAchievement">
+		    <h2>{{selectedAchievement.title}}</h2>
+		    <p>{{selectedAchievement.description}}</p>
+		  </div>
+</div>

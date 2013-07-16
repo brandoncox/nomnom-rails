@@ -7,6 +7,7 @@ gem 'mongoid', git: 'git://github.com/mongoid/mongoid.git'
 gem 'debugger'
 
 gem 'formtastic'
+gem 'god'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 gem 'angularjs-rails'
