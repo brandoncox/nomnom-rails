@@ -1,28 +1,9 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+== NomNomRails is the core rails web platform for reaching goals by completing short term achievements.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* The current Ruby version this app is built on is 2.0.0p195. It is highly suggested to use RVM for managing different versions of Ruby. the rails application requires Rails 4.0.0 and Bundler to be installed.
+
+* This version of MongoDB is 1.8.2
+
+* With MongoDB running, run rake db:migrate to create the database. A seed file is provided and data can be loaded through the rake db:seed command.
+
