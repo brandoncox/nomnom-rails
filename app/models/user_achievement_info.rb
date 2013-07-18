@@ -1,5 +1,4 @@
-class UserAchievementInfo
-  include Mongoid::Document
+class UserAchievementInfo < Entity
   include Mongoid::Attributes::Dynamic
   
   embedded_in :user_achievement

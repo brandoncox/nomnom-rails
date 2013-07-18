@@ -26,6 +26,7 @@ class User
   
   has_many :user_achievements
   belongs_to :role
+  has_and_belongs_to_many :groups
   
   embeds_one :profile
 

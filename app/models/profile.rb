@@ -1,5 +1,4 @@
-class Profile
-  include Mongoid::Document
+class Profile < Entity
   embedded_in :user
   
   field :first_name, type: String

@@ -1,7 +1,5 @@
-class UserAchievement
-  include Mongoid::Document
-  include Mongoid::Timestamps 
-  
+class UserAchievement < Entity
+    
   field :complete, type: Boolean, default: false
   
   belongs_to :user

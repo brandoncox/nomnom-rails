@@ -1,5 +1,4 @@
-class Badge
-  include Mongoid::Document
+class Badge < Entity
   
   field :title, type: String
   field :description, type: String
@@ -8,6 +7,7 @@ class Badge
 
   has_many :user_badges
   has_many :achievements
+  has_and_belongs_to_many :groups
   
   scope :novice, where(classification: :novice)
   scope :experienced, where(classification: :experienced)

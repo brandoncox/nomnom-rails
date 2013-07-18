@@ -1,5 +1,5 @@
-class Achievement
-  include Mongoid::Document
+class Achievement < Entity
+
   field :title, type: String
   field :description, type: String
   field :weight, type: Integer
@@ -7,6 +7,7 @@ class Achievement
   field :difficulty, type: Symbol
 
   has_many :user_achievements
+  has_and_belongs_to_many :groups
   belongs_to :badge
 
 end

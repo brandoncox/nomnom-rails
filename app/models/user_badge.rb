@@ -1,3 +1,2 @@
-class UserBadge
-  include Mongoid::Document
+class UserBadge < Entity
 end
