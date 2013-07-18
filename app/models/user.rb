@@ -25,6 +25,7 @@ class User
   field :last_sign_in_ip,    :type => String
   
   has_many :user_achievements
+  belongs_to :role
   
   embeds_one :profile
 
