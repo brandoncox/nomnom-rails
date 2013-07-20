@@ -1,7 +1,7 @@
 NomnomRails::Application.routes.draw do
   
 
-  resources :badges
+  resources :badges, :profile_steps
 
 
   resources :profile, controller: 'profile'
