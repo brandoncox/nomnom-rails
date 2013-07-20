@@ -4,7 +4,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem 'mongoid', git: 'git://github.com/mongoid/mongoid.git'
 
-gem 'debugger'
 
 gem 'formtastic'
 gem 'god'
@@ -55,5 +54,5 @@ end
 # gem 'capistrano', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]
 
