@@ -1,0 +1,42 @@
+<%= form_for @profile = Profile.new, url: wizard_path, html: { class: 'form-horizontal' } do |f| %>
+  <h2>Tell us a little about yourself</h2>
+  <div class="control-group">
+    <div class="controls">
+			<%= f.text_field :first_name, :autofocus => true, class: 'input-block-level', :placeholder => "First Name" %>
+    </div>
+  </div>
+  
+  <div class="control-group">
+    <div class="controls">
+			<%= f.text_field :last_name, :autofocus => true, class: 'input-block-level', :placeholder => "Last Name" %>
+    </div>
+  </div>
+  
+  <div class="control-group">
+    <div class="controls">
+			<%= f.text_field :address_2, :autofocus => true, class: 'input-block-level', :placeholder => "Address 2" %>
+    </div>
+  </div>
+  
+  <div class="control-group">
+    <div class="controls">
+			<%= f.text_field :city, :autofocus => true, class: 'input-block-level', :placeholder => "City" %>
+    </div>
+  </div>
+  
+  <div class="control-group">
+    <div class="controls">
+			<%= f.text_field :state, :autofocus => true, class: 'input-block-level', :placeholder => "State" %>
+    </div>
+  </div>
+  
+  <div class="control-group">
+    <div class="controls">
+			<%= f.text_field :zip, :autofocus => true, class: 'input-block-level', :placeholder => "Zip" %>
+    </div>
+  </div>
+  
+  <div class="actions">
+        <%= f.submit "Continue" %>
+  </div>
+<% end %>
