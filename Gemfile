@@ -9,6 +9,7 @@ gem 'debugger'
 gem 'formtastic'
 gem 'god'
 gem 'cancan'
+gem 'wicked'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 gem 'angularjs-rails'
@@ -56,5 +57,3 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-
-int fuzzz
