@@ -1,1 +1,26 @@
-contact
+<%= form_for @profile, url: wizard_path, html: { class: 'form-horizontal' }, :method =>:put do |f| %>
+  <legend>Tell us a little about yourself</legend >
+      <label>First Name</label>
+			<%= f.text_field :first_name, :autofocus => true, :placeholder => "First Name" %>
+
+      <label>Last Name</label>
+			<%= f.text_field :last_name, :autofocus => true, :placeholder => "Last Name" %>  
+      
+      <label>Address 1</label>  
+			<%= f.text_field :address_1, :autofocus => true, :placeholder => "Address 1" %>
+			
+      <label>Address 2</label>  
+			<%= f.text_field :address_2, :autofocus => true, :placeholder => "Address 2" %>
+  
+      <label>City</label>
+			<%= f.text_field :city, :autofocus => true, :placeholder => "City" %>
+  
+      <label>State</label>
+			<%= f.text_field :state, :autofocus => true, :placeholder => "State" %>
+      
+      <label>Zip</label>
+			<%= f.text_field :zip, :autofocus => true,  :placeholder => "Zip" %>
+  <div class="actions">
+    <%= f.submit "Save and go to Contact Information" %>
+  </div>
+<% end %>

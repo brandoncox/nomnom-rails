@@ -1,42 +1,26 @@
-<%= form_for @profile = Profile.new, url: wizard_path, html: { class: 'form-horizontal' } do |f| %>
-  <h2>Tell us a little about yourself</h2>
-  <div class="control-group">
-    <div class="controls">
-			<%= f.text_field :first_name, :autofocus => true, class: 'input-block-level', :placeholder => "First Name" %>
-    </div>
-  </div>
+<%= form_for @profile, url: wizard_path, html: { class: 'form-horizontal' }, :method =>:put do |f| %>
+  <legend>Tell us a little about yourself</legend >
+      <label>First Name</label>
+			<%= f.text_field :first_name, :autofocus => true, :placeholder => "First Name" %>
+
+      <label>Last Name</label>
+			<%= f.text_field :last_name, :autofocus => true, :placeholder => "Last Name" %>  
+      
+      <label>Address 1</label>  
+			<%= f.text_field :address_1, :autofocus => true, :placeholder => "Address 1" %>
+			
+      <label>Address 2</label>  
+			<%= f.text_field :address_2, :autofocus => true, :placeholder => "Address 2" %>
   
-  <div class="control-group">
-    <div class="controls">
-			<%= f.text_field :last_name, :autofocus => true, class: 'input-block-level', :placeholder => "Last Name" %>
-    </div>
-  </div>
+      <label>City</label>
+			<%= f.text_field :city, :autofocus => true, :placeholder => "City" %>
   
-  <div class="control-group">
-    <div class="controls">
-			<%= f.text_field :address_2, :autofocus => true, class: 'input-block-level', :placeholder => "Address 2" %>
-    </div>
-  </div>
-  
-  <div class="control-group">
-    <div class="controls">
-			<%= f.text_field :city, :autofocus => true, class: 'input-block-level', :placeholder => "City" %>
-    </div>
-  </div>
-  
-  <div class="control-group">
-    <div class="controls">
-			<%= f.text_field :state, :autofocus => true, class: 'input-block-level', :placeholder => "State" %>
-    </div>
-  </div>
-  
-  <div class="control-group">
-    <div class="controls">
-			<%= f.text_field :zip, :autofocus => true, class: 'input-block-level', :placeholder => "Zip" %>
-    </div>
-  </div>
-  
+      <label>State</label>
+			<%= f.text_field :state, :autofocus => true, :placeholder => "State" %>
+      
+      <label>Zip</label>
+			<%= f.text_field :zip, :autofocus => true,  :placeholder => "Zip" %>
   <div class="actions">
-        <%= f.submit "Continue" %>
+    <%= f.submit "Save and go to Contact Information" %>
   </div>
 <% end %>
