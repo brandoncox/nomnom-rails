@@ -1,26 +1,24 @@
-<%= form_for @profile, url: wizard_path, html: { class: 'form-horizontal' }, :method =>:put do |f| %>
-  <legend>Tell us a little about yourself</legend >
-      <label>First Name</label>
-			<%= f.text_field :first_name, :autofocus => true, :placeholder => "First Name" %>
+<script language="javascript">
+$(document).ready(function(){
+  $("#messager_select").bind('change', function(){
+    alert("here!!");  
+  });
+});
+</script>
 
-      <label>Last Name</label>
-			<%= f.text_field :last_name, :autofocus => true, :placeholder => "Last Name" %>  
+<%= form_for @profile, url: wizard_path, html: { class: 'form-horizontal' }, :method =>:put do |f| %>
+  <legend>How would you like to be contacted?</legend >
       
-      <label>Address 1</label>  
-			<%= f.text_field :address_1, :autofocus => true, :placeholder => "Address 1" %>
+      <label>Messager</label>
+      <div>
+      <select id="messager_select">
+			  <%= options_for_select(Profile.messager_types) %>  
+			</select>
+			<input type="text" id="screename" placeholder="Screename"></input>
+			Preferred: <input type="checkbox">
 			
-      <label>Address 2</label>  
-			<%= f.text_field :address_2, :autofocus => true, :placeholder => "Address 2" %>
-  
-      <label>City</label>
-			<%= f.text_field :city, :autofocus => true, :placeholder => "City" %>
-  
-      <label>State</label>
-			<%= f.text_field :state, :autofocus => true, :placeholder => "State" %>
-      
-      <label>Zip</label>
-			<%= f.text_field :zip, :autofocus => true,  :placeholder => "Zip" %>
+      </div>
   <div class="actions">
-    <%= f.submit "Save and go to Contact Information" %>
+    <%= f.submit "Save and setup Social Information" %>
   </div>
 <% end %>
